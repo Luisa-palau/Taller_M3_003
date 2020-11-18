@@ -1,0 +1,45 @@
+package co.edu.campusucc;
+
+import java.util.Random;
+
+public class Ejercicio02 {
+	public static void main(String[] args) { 
+		 System.out.println(" ******************************* ");
+		 System.out.println(" *  Autor: Luisa Palau         * ");
+		 System.out.println(" *  Date: Noviembre 18 2020    * ");
+		 System.out.println(" ******************************* ");
+		 System.out.println(" *   Ingenieria industrial     * ");
+		 System.out.println(" *    Ciclos condicionales     * ");
+		 System.out.println(" *       Ejercicio 02          * ");
+		 System.out.println(" ******************************* ");
+		
+		 
+		 
+			Random numero = new Random();
+			int N = numero.nextInt(500);
+			Random suma = new Random();
+			int S = suma.nextInt(20);
+			
+			if (( N >= 1 & N <= 500) && (S >= 1 & S <= 20)) {
+			   int R = N + S; 
+			
+			
+			
+			System.out.println(" La suma del numero "+N+" entre "+S+" es: "+R); 
+	}
+	
+      
+	}      	
+
+}
+
+
+ ******************************* 
+ *  Autor: Luisa Palau         * 
+ *  Date: Noviembre 18 2020    * 
+ ******************************* 
+ *   Ingenieria industrial     * 
+ *    Ciclos condicionales     * 
+ *       Ejercicio 02          * 
+ ******************************* 
+ La suma del numero 299 entre 17 es: 316

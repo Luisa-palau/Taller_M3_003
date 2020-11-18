@@ -1,0 +1,46 @@
+package co.edu.campusucc;
+
+import java.util.Random;
+
+public class Ejercicio03 {
+	public static void main(String[] args) { 
+		 System.out.println(" ******************************* ");
+		 System.out.println(" *  Autor: Luisa Palau         * ");
+		 System.out.println(" *  Date: Noviembre 18 2020    * ");
+		 System.out.println(" ******************************* ");
+		 System.out.println(" *   Ingenieria industrial     * ");
+		 System.out.println(" *    Ciclos condicionales     * ");
+		 System.out.println(" *       Ejercicio 03          * ");
+		 System.out.println(" ******************************* ");
+		
+		 
+		 
+			Random numero = new Random();
+			int N = numero.nextInt(500);
+			int numeroI = 0;
+			int ayudaN = N;
+			int resultado = 0;
+			
+			while (ayudaN !=0){ 
+				resultado = ayudaN % 10;
+				ayudaN = ayudaN / 10;
+				numeroI = numeroI * 10 + resultado; 
+				
+			}
+			if (N == numeroI) {
+				System.out.println("El numero "+N+" es capicua");
+				
+			}else {
+				System.out.println("El numero "+N+" no es capicua");
+			}
+}
+}
+ ******************************* 
+ *  Autor: Luisa Palau         * 
+ *  Date: Noviembre 18 2020    * 
+ ******************************* 
+ *   Ingenieria industrial     * 
+ *    Ciclos condicionales     * 
+ *       Ejercicio 03          * 
+ ******************************* 
+El numero 157 no es capicua

@@ -1,0 +1,46 @@
+package co.edu.campusucc;
+
+import java.util.Random;
+
+public class ExplicacionCiclos {
+	public static void main(String[] args) { 
+		 System.out.println(" ******************************* ");
+		 System.out.println(" *  Autor: Luisa Palau         * ");
+		 System.out.println(" *  Date: Noviembre 16 2020    * ");
+		 System.out.println(" ******************************* ");
+		 System.out.println(" *   Ingenieria industrial     * ");
+		 System.out.println(" *    Ciclos condicionales     * ");
+		 System.out.println(" *       Ejercicio 01          * ");
+		 System.out.println(" ******************************* ");
+		
+		 
+		 
+			Random numero = new Random();
+			int N = numero.nextInt(9999);
+			
+			if ( N > 9 & N < 10000) { 
+			
+			int a = N/1000;
+			int b = N-(a*1000);
+			int c = b/100;
+			int d = b - (c * 100);
+			int e = d/10;
+			int f = d- (e*10);
+			int g = (f*1000) + (e*100) + (c*10) + a;
+			
+			System.out.println(" La inversa del numero "+N+" es: " +g); 
+	}
+	
+       
+        	
+}
+}
+******************************* 
+ *  Autor: Luisa Palau         * 
+ *  Date: Noviembre 16 2020    * 
+ ******************************* 
+ *   Ingenieria industrial     * 
+ *    Ciclos condicionales     * 
+ *       Ejercicio 01          * 
+ ******************************* 
+ La inversa del numero 9219 es: 9129
