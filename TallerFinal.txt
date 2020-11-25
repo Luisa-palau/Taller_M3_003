@@ -1,0 +1,334 @@
+package TrabajoFinal;
+import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.lang.invoke.VarHandle.VarHandleDesc;
+public class TallerFinal {
+	public static void main(String[] args) {
+		   System.out.println("+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+		   System.out.println("-    Autor:Luisa Fernanda Palau Ramirez +");
+		   System.out.println("+                                      -");
+		   System.out.println("-        INGENIERIA INDUSTRIAL         +");
+		   System.out.println("+                                      -");
+		   System.out.println("-     HERRAMIENTAS COMPUTACIONALES     +");
+		   System.out.println("+                                      -");
+		   System.out.println("-      Universidad Cooperativa de      +");
+		   System.out.println("+               colombia               -");
+		   System.out.println("-                                      +");
+		   System.out.println("+             PROGRAMA MENU            -");
+		   System.out.println("-  package tallerfinal;                                    +");
+		   System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
+	
+		 	   int opcionPrograma;
+		 	   char otroValor;
+			   String comando = "", ruta="D:TallerFinal\\";
+			  
+			   Scanner leer = new Scanner(System.in); 
+			
+		do{	   
+			   System.out.println("Digite 1 para el programa Ejercicio00");
+			   System.out.println("Digite 2 para el programa Ejercicio01");
+			   System.out.println("Digite 3 para el programa Ejercicio02");
+			   System.out.println("Digite 4 para el programa Ejercico03");
+			   System.out.println("Digite 5 para el programa Ejercicio04");
+			   System.out.println("Digite 6 para el programa Ejercicio05");
+			   System.out.println("Digite 7 para el programa Ejercicio06");
+			   System.out.println("Digite 8 para el programa Ejercicio07");
+			   System.out.println("Digite 9 para el programa Ejercicio08");
+			   System.out.println("Digite 10 para el programa Ejercicio09");
+			   System.out.println("Digite 11 para el programa Ejercicio10");
+			   System.out.println("Digite 12 para el programa Ejercicio11");
+			   System.out.println("Digite 13 para el programa Ejercicio12");
+			   System.out.println("Digite 14 para el programa Ejercicio13");
+			   System.out.print("Ingrese el numero del programa que desea ejecutar: ");
+			   opcionPrograma=leer.nextInt();
+			    
+			   switch (opcionPrograma) {
+			   case 1:
+				   comando = "Ejercicio00";
+				   break;
+			   case 2:
+				   comando = "Ejercicio01";
+				   break;
+			   case 3:
+				   comando = "Ejercicio02";
+				   break;
+			   case 4:
+				   comando = "Ejercicio03";
+				   break;
+			   case 5:
+				   comando = "Ejercicio04";
+				   break;
+			   case 6:
+				   comando = "Ejercicio05";
+				   break;
+			   case 7: 
+				   comando = "Ejercicio06";
+				   break;
+			   case 8:
+				   comando = "Ejercicio07";
+				   break;
+			   case 9:
+				   comando = "Ejercicio08";
+				   break;
+			   case 10:
+				   comando = "Ejercicio09";
+				   break;
+			   case 11:
+				   comando = "Ejercicio10";
+				   break;
+			   case 12:
+				   comando = "Ejercicio11";
+				   break;
+			   case 13:
+				   comando = "Ejercicio12";
+				   break;
+			   case 14:
+				   comando = "Ejercicio13";
+				   break;
+			  
+				   
+			   }
+			   
+			   try
+			    
+			   { 
+				  
+				   var processBuilder = new ProcessBuilder();
+				   processBuilder.command("java","D:TallerFinal" +comando+ ".java");
+				   var process = processBuilder.inheritIO().start();
+				   var ret = process.waitFor();
+				   				   
+			   }
+			   
+			   catch (Exception e)
+			   {
+				   System.out.println(e);
+			   }
+			   	   System.out.println("QUIERE EJECUTAR EL SIGUIENTE PROGRAMA? 1 para SI 2 para NO ");
+			   	   otroValor = leer.next().charAt(0);
+		   		} while(otroValor=='1');
+	}
+}
+	
+
+package TrabajoFinal;
+import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.lang.invoke.VarHandle.VarHandleDesc;
+public class TallerFinal {
+	public static void main(String[] args) {
+		   System.out.println("+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-");
+		   System.out.println("-    Autor:Luisa Fernanda Palau Ramirez +");
+		   System.out.println("+                                      -");
+		   System.out.println("-        INGENIERIA INDUSTRIAL         +");
+		   System.out.println("+                                      -");
+		   System.out.println("-     HERRAMIENTAS COMPUTACIONALES     +");
+		   System.out.println("+                                      -");
+		   System.out.println("-      Universidad Cooperativa de      +");
+		   System.out.println("+               colombia               -");
+		   System.out.println("-                                      +");
+		   System.out.println("+             PROGRAMA MENU            -");
+		   System.out.println("-  package tallerfinal;                                    +");
+		   System.out.println("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
+	
+		 	   int opcionPrograma;
+		 	   char otroValor;
+			   String comando = "", ruta="D:TallerFinal\\";
+			  
+			   Scanner leer = new Scanner(System.in); 
+			
+		do{	   
+			   System.out.println("Digite 1 para el programa Ejercicio00");
+			   System.out.println("Digite 2 para el programa Ejercicio01");
+			   System.out.println("Digite 3 para el programa Ejercicio02");
+			   System.out.println("Digite 4 para el programa Ejercico03");
+			   System.out.println("Digite 5 para el programa Ejercicio04");
+			   System.out.println("Digite 6 para el programa Ejercicio05");
+			   System.out.println("Digite 7 para el programa Ejercicio06");
+			   System.out.println("Digite 8 para el programa Ejercicio07");
+			   System.out.println("Digite 9 para el programa Ejercicio08");
+			   System.out.println("Digite 10 para el programa Ejercicio09");
+			   System.out.println("Digite 11 para el programa Ejercicio10");
+			   System.out.println("Digite 12 para el programa Ejercicio11");
+			   System.out.println("Digite 13 para el programa Ejercicio12");
+			   System.out.println("Digite 14 para el programa Ejercicio13");
+			   System.out.print("Ingrese el numero del programa que desea ejecutar: ");
+			   opcionPrograma=leer.nextInt();
+			    
+			   switch (opcionPrograma) {
+			   case 1:
+				   comando = "Ejercicio00";
+				   break;
+			   case 2:
+				   comando = "Ejercicio01";
+				   break;
+			   case 3:
+				   comando = "Ejercicio02";
+				   break;
+			   case 4:
+				   comando = "Ejercicio03";
+				   break;
+			   case 5:
+				   comando = "Ejercicio04";
+				   break;
+			   case 6:
+				   comando = "Ejercicio05";
+				   break;
+			   case 7: 
+				   comando = "Ejercicio06";
+				   break;
+			   case 8:
+				   comando = "Ejercicio07";
+				   break;
+			   case 9:
+				   comando = "Ejercicio08";
+				   break;
+			   case 10:
+				   comando = "Ejercicio09";
+				   break;
+			   case 11:
+				   comando = "Ejercicio10";
+				   break;
+			   case 12:
+				   comando = "Ejercicio11";
+				   break;
+			   case 13:
+				   comando = "Ejercicio12";
+				   break;
+			   case 14:
+				   comando = "Ejercicio13";
+				   break;
+			  
+				   
+			   }
+			   
+			   try
+			    
+			   { 
+				  
+				   var processBuilder = new ProcessBuilder();
+				   processBuilder.command("java","D:TallerFinal" +comando+ ".java");
+				   var process = processBuilder.inheritIO().start();
+				   var ret = process.waitFor();
+				   				   
+			   }
+			   
+			   catch (Exception e)
+			   {
+				   System.out.println(e);
+			   }
+			   	   System.out.println("QUIERE EJECUTAR EL SIGUIENTE PROGRAMA? 1 para SI 2 para NO ");
+			   	   otroValor = leer.next().charAt(0);
+		   		} while(otroValor=='1');
+	}
+}
+	
+
+
+
+
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-   Autor:Luisa Fernanda Palau Ramirez +
++                                      -
+-        INGENIERIA INDUSTRIAL         +
++                                      -
+-     HERRAMIENTAS COMPUTACIONALES     +
++                                      -
+-      Universidad Cooperativa de      +
++               colombia               -
+-                                      +
++             PROGRAMA MENU            -
+-        package tallerfinal;          +
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+Digite 1 para el programa Ejercicio00
+Digite 2 para el programa Ejercicio01
+Digite 3 para el programa Ejercicio02
+Digite 4 para el programa Ejercico03
+Digite 5 para el programa Ejercicio04
+Digite 6 para el programa Ejercicio05
+Digite 7 para el programa Ejercicio06
+Digite 8 para el programa Ejercicio07
+Digite 9 para el programa Ejercicio08
+Digite 10 para el programa Ejercicio09
+Digite 11 para el programa Ejercicio10
+Digite 12 para el programa Ejercicio11
+Digite 13 para el programa Ejercicio12
+Digite 14 para el programa Ejercicio13
+Ingrese el numero del programa que desea ejecutar: 1
+ ******************************* 
+ *  Autor: Luisa Palau         * 
+ *  Date: Noviembre 18 2020    * 
+ ******************************* 
+ *   Ingenieria industrial     * 
+ *    Ciclos condicionales     * 
+ *       Ejercicio 00          * 
+ ******************************* 
+ La suma del numero 140 entre 18 es: 158
+QUIERE EJECUTAR EL SIGUIENTE PROGRAMA? 1 para SI 2 para NO 
+1
+Digite 1 para el programa Ejercicio00
+Digite 2 para el programa Ejercicio01
+Digite 3 para el programa Ejercicio02
+Digite 4 para el programa Ejercico03
+Digite 5 para el programa Ejercicio04
+Digite 6 para el programa Ejercicio05
+Digite 7 para el programa Ejercicio06
+Digite 8 para el programa Ejercicio07
+Digite 9 para el programa Ejercicio08
+Digite 10 para el programa Ejercicio09
+Digite 11 para el programa Ejercicio10
+Digite 12 para el programa Ejercicio11
+Digite 13 para el programa Ejercicio12
+Digite 14 para el programa Ejercicio13
+Ingrese el numero del programa que desea ejecutar: 7
+ ******************************* 
+ *  Autor: Luisa Palau         * 
+ *  Date: Noviembre 01 2020    * 
+ ******************************* 
+ *   Ingenieria industrial     * 
+ *     Taller M2 Ejercicios07  * 
+ ******************************* 
+Caracol Cienpies Gusano
+GUSANO  8
+CARACOL  6
+CIENPIES  8
+GUSANO  14
+CARACOL  11
+CIENPIES  15
+El primero en llegar es GUSANO
+QUIERE EJECUTAR EL SIGUIENTE PROGRAMA? 1 para SI 2 para NO 
+1
+Digite 1 para el programa Ejercicio00
+Digite 2 para el programa Ejercicio01
+Digite 3 para el programa Ejercicio02
+Digite 4 para el programa Ejercico03
+Digite 5 para el programa Ejercicio04
+Digite 6 para el programa Ejercicio05
+Digite 7 para el programa Ejercicio06
+Digite 8 para el programa Ejercicio07
+Digite 9 para el programa Ejercicio08
+Digite 10 para el programa Ejercicio09
+Digite 11 para el programa Ejercicio10
+Digite 12 para el programa Ejercicio11
+Digite 13 para el programa Ejercicio12
+Digite 14 para el programa Ejercicio13
+Ingrese el numero del programa que desea ejecutar: 12
+ ******************************* 
+ *  Autor: Luisa Palau         * 
+ *  Date: Noviembre 16 2020    * 
+ ******************************* 
+ *   Ingenieria industrial     * 
+ *    Ciclos condicionales     * 
+ *       Ejercicio 12          * 
+ ******************************* 
+ La inversa del numero 8956 es: 6598
+QUIERE EJECUTAR EL SIGUIENTE PROGRAMA? 1 para SI 2 para NO 
+2
+
+
+
+
+
